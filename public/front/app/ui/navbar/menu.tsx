@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { BsList, BsHouseDoor, BsShop, BsCreditCard2Back } from "react-icons/bs";
 import RegularList from "../regular-list";

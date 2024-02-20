@@ -1,3 +1,6 @@
+'use client'
+
+import { useTmp } from "@/app/store/global-store";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -9,6 +12,8 @@ type Props = {
 
 const MenuItem = ({ item }: { item: Props }) => {
 	const pathname = usePathname();
+	const {hoveredCatId, setHoveredCat} = useTmp()
+
 	return (
 		<Link
 			href={item.path}
