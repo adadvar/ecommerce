@@ -12,11 +12,13 @@ import HomeDrawer from "../drawer/home-drawer";
 const Navbar = () => {
     return (
         <div className="lg:h-32 lg:shadow-md text-sub_title px-4">
-            <div className="lg:flex hidden justify-between lg:gap-16 gap-10 py-4">
-                <Right />
-                <Left />
+            <div className="lg:flex lg:flex-col hidden ">
+                <div className="flex justify-between lg:gap-16 gap-10 py-4">
+                    <Right />
+                    <Left />
+                </div>
+                <Menu />
             </div>
-            <Menu />
             <div className="lg:hidden flex flex-col gap-2 p-4">
                 <Top />
                 <Center />
