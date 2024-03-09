@@ -85,9 +85,9 @@ const CategoryMenuItem = () => {
                 {item.title}
             </div>
             {hoveredMenu === "دسته بندی محصولات" && (
-                <div className="fixed  inset-0 top-32 bg-opacity-5 bg-black ">
+                <div className="fixed inset-0 top-32 bg-opacity-5 bg-black z-50">
                     <div
-                        className="fixed shadow-lg bg-bg border rounded-lg gap-4 flex p-4 inset-x-10 top-36 bottom-10"
+                        className="shadow-lg bg-bg border rounded-lg gap-4 flex p-4 inset-x-10 top-36 bottom-10"
                         onMouseLeave={() => setHoveredMenu("")}
                     >
                         <div className="flex flex-col w-1/4">

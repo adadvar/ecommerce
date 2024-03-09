@@ -40,7 +40,10 @@ shell:
 	docker exec -it ecommerce-app bash
 
 shell-n:
-	docker exec -it nextjs1 /bin/sh
+	docker exec -it nextjs-ecommerce-app /bin/sh
 
 shell-as-root:
 	docker compose -f $(COMPOSE_FILES) exec  --user=root app ash
+
+kill:
+	docker stop $$(docker ps -a -q)

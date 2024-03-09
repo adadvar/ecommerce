@@ -20,7 +20,7 @@ const Slider = ({ images, image_url }: SliderProps) => {
     };
 
     return (
-        <div className="relative flex w-full h-96 items-center justify-center shadow-lg">
+        <div className="relative flex w-full h-full items-center justify-center shadow-lg">
             {current !== 0 && (
                 <button
                     onClick={prevSlide}
@@ -39,7 +39,7 @@ const Slider = ({ images, image_url }: SliderProps) => {
             )}
             {images.map((img, index) => (
                 <div
-                    className={`absolute w-full h-96 transition-opacity duration-1000 ease-in-out ${
+                    className={`absolute w-full h-full transition-opacity rounded-lg overflow-hidden duration-1000 ease-in-out ${
                         index === current ? "opacity-100" : "opacity-0"
                     }`}
                     key={index}
@@ -48,9 +48,9 @@ const Slider = ({ images, image_url }: SliderProps) => {
                         <Image
                             src={image_url + img}
                             alt={`Slide ${index}`}
-                            className="object-cover w-full h-96"
-                            width={126}
-                            height={126}
+                            className=" w-full h-full"
+                            width={500}
+                            height={350}
                             unoptimized={true}
                         />
                     )}
