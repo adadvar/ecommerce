@@ -15,7 +15,7 @@ export default function RootLayout({
     return (
         <html lang="en" dir="rtl" data-theme="light">
             <body className="h-screen">
-                <main className="max-w-screen-2xl mx-auto">
+                <main className="">
                     <Navbar />
                     {children}
                 </main>

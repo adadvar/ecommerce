@@ -39,7 +39,7 @@ const Slider = ({ images, image_url }: SliderProps) => {
             )}
             {images.map((img, index) => (
                 <div
-                    className={`absolute w-full h-full transition-opacity rounded-lg overflow-hidden duration-1000 ease-in-out ${
+                    className={`transition-opacity rounded-lg overflow-hidden duration-1000 ease-in-out ${
                         index === current ? "opacity-100" : "opacity-0"
                     }`}
                     key={index}
@@ -48,7 +48,7 @@ const Slider = ({ images, image_url }: SliderProps) => {
                         <Image
                             src={image_url + img}
                             alt={`Slide ${index}`}
-                            className=" w-full h-full"
+                            className=" w-auto h-auto"
                             width={500}
                             height={350}
                             unoptimized={true}

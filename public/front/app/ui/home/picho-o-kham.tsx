@@ -1,9 +1,6 @@
 import React from "react";
-import RegularList from "../regular-list";
-import PichoKhamItem from "./pich-product-item";
 import Link from "next/link";
-import Slider2 from "../slider2";
-import Slider3 from "../slider3";
+import SliderPichokham from "../slider-pichokham";
 
 const items = [
     {
@@ -54,7 +51,7 @@ const PichoKham = () => {
                     <Link href={"/"}>مشاهده همه محصولات</Link>
                 </div>
                 <div className="lg:w-3/4 w-full -mt-24" dir="ltr">
-                    <Slider2
+                    <SliderPichokham
                         images={items}
                         image_url="http://localhost:3000/img/"
                     />

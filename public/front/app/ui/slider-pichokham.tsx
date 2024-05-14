@@ -18,7 +18,7 @@ interface SliderProps {
     image_url: string;
 }
 
-const Slider2 = ({ images, image_url }: SliderProps) => {
+const SliderPichokham = ({ images, image_url }: SliderProps) => {
     return (
         <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -77,4 +77,4 @@ const Slider2 = ({ images, image_url }: SliderProps) => {
     );
 };
 
-export default Slider2;
+export default SliderPichokham;
